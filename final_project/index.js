@@ -29,9 +29,9 @@ const username = req.body.username;
   }
 });
  
-const PORT =5000;
+const PORT =5001;
 
-app.use("/customer", customer_routes);
+app.use("/", customer_routes);
 app.use("/", genl_routes);
 
 app.listen(PORT,()=>console.log("Server is running"));
